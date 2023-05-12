@@ -1,0 +1,286 @@
+@charset "UTF-8";
+
+article, aside, footer, header, nav, section
+{
+display: block;
+}
+
+html, body, h1, h2, h3, ul, li, a, article, aside, footer, header, main, nav, section, form
+{
+padding: 0;
+margin: 0;
+color:black;
+}
+
+padding
+{
+	padding: 0;
+}
+
+.search
+{
+
+    display: block;
+	padding: 0px 0px 0px 0px;
+	float: center;
+}
+
+input[type=text] {
+    width: 70%;
+	height: 30px;
+    padding: 0px 0px;
+    margin: 0px 0;
+    box-sizing: border-box;
+}
+
+input[type=Image] {
+    padding: 0px 0px;
+	margin: 0px 0px -7px 0px;
+	box-sizing: border-box;
+}
+
+
+header nav ul li a.login-btn {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 10px; /* add this line */
+    margin-right: 10px; /* add this line */
+}
+
+h1
+{
+	font-size: 2em;
+	font-weight: bold;
+}
+
+h2
+{
+margin-top: 11px;
+margin-bottom: 11px:
+}
+
+
+header
+{
+margin-top: 20px;
+margin-left: auto;
+margin-right: auto;
+background-color: white;
+Font-size: 15px;
+margin-top: 20px;
+padding: 10px 20px;
+width: 100%;
+}
+
+nav
+{
+margin-top: 5px;
+margin-left: auto;
+margin-right: auto;
+background-color: white;
+Font-size: 15px;
+margin-top: 5px;
+padding: 10px 20px;
+}
+
+.banner
+{
+background-color: white;
+color: black;
+padding: 10px 20px;
+margin-top: 0px;
+}
+
+body
+{
+width: 70%;
+margin-left: auto;
+margin-right: auto;
+background-color: #f0f0f0;
+Font-size: 15px;
+ margin-top: 250px;
+}
+
+li a
+{
+	//background-color: #f0f0f0;
+    color: white;
+    padding: 7px;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+	//color: red;
+	position: center;
+
+}
+
+li
+{
+
+display: inline;
+margin-left: 15px;
+margin-right: 15px;
+font-size: 19px;
+position: center;
+}
+
+main
+{
+display: inline;
+margin-bottom: 10px;
+height: 100%;
+width: 100%;
+}
+
+section
+{
+background-color: #bbbbbb;
+margin-top: 10px;
+margin-bottom: 10px;
+ margin-top: 50px;
+}
+
+article
+{
+background-color: white;
+margin-top: 5px;
+padding: 10px 20px;
+width: 100%
+}
+
+
+.panel-nav{
+    background: #f2f2f2;
+    padding: 1em;
+}
+
+
+footer
+{
+margin-top: 10px;
+margin-left: auto;
+margin-right: auto;
+background-color: white;
+Font-size: 15px;
+margin-top: 20px;
+padding: 10px 20px;
+width: 100%;
+color: black;
+}
+
+.lableRating
+{
+	display: inline-block;
+	text-align:left;
+	float:left;
+	width: 175px;
+	height: 155px;
+	Font-size: 125px;
+	background-color: lightblue;
+	margin-top: 10px;
+	padding: 10px;
+}
+
+.lable5
+{
+	display: inline-block;
+	width: 35px;
+	height: 155px;
+	Font-size: 25px;
+	background-color: lightblue;
+	margin-top: 10px;
+	padding: 10px;
+}
+
+.lableDificulty
+{
+	Font-size: 25px;
+}
+
+.rateP
+{
+	display: inline-block;
+	width: auto;
+	Font-size: 21px;
+	background-color: lightblue;
+	margin-top: 10px;
+	padding: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	color:while;
+	border-radius: 10px;
+
+}
+.lableRatingSmall
+{
+	display: inline-block;
+	text-align:left;
+	float:left;
+	width: 21px;
+	height: 25px;
+	Font-size: 21px;
+	background-color: lightblue;
+    padding-left : 7px;
+
+}
+
+/* unvisited link */
+a:link {
+  color: #39FF14;
+}
+
+/* visited link */
+a:visited {
+  color: red;
+}
+
+/* mouse over link */
+a:hover {
+  color: red;
+}
+
+/* selected link */
+a:active {
+  color: yellow;
+}
+
+
+
+
+/* Style for the login form */
+#login-form {
+  background-color: #fff;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.4);
+  max-width: 400px;
+  margin: auto;
+  position: relative;
+}
+
+/* Style for the close button */
+#close-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  font-size: 24px;
+  line-height: 1;
+  color: #555;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+/* Style for the body when the login form is open */
+body.login-form-open {
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  #login-form {
+    padding: 10px;
+    max-width: 300px;
+  }
+}

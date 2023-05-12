@@ -1,0 +1,213 @@
+<!--
+Gia bao Vo
+IS448
+Final Project
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    <title>My Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link id="dynamic-stylesheet" rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css">
+
+	  <link rel="stylesheet" href="style/stylemenu.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <body onload="loadStylesheet()">
+      <body onload="loadStylesheet()">
+    <style>
+
+    .hero-image {
+      background-image: url("bg.png");
+      background-color: #cccccc;
+      height: 350px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+    }
+
+    .hero-text {
+      text-align: center;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+    }
+    .additional-section {
+      background-image: url("realrmp.png");
+      height: 400px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+      color: black;
+      padding: 20px;
+    }
+    </style>
+
+
+	<header class="banner">
+	<img src="images/logo.svg">
+
+		<div class="panel panel-nav">
+			<center>
+				<div class="dropdown">
+				<button class="dropbtn"><a href="testpage.html"><b> HOME </b></a></button>
+				</div>
+				<div class="dropdown">
+				<button class="dropbtn"><a href="admin/index1.html"><b> Login </b></a></button>
+				</div>
+				<div class="dropdown">
+				<button class="dropbtn"><a href="contact/conctact.php"><b> ContactUs </b></a></button>
+				</div>
+			</center>
+		</div>
+
+
+    <div class="container">
+        <h1></h1>
+        <nav>
+            <ul>
+                <li><a href="#" class="login-btn" id="login-btn">Login</a></li>
+            </ul>
+        </nav>
+    </div>
+	</header>
+
+
+
+    <main>
+
+				<article>
+				<center>
+        <div class="container">
+          <div class="hero-image">
+					<div class="hero-text">
+            <img src="images/bglogo.svg">
+            <div class="search-box">
+                <h3>Enter your professor to get started</h3>
+                <form method= "get" action= "prof/inP/search/search.php">
+                    &nbsp;&nbsp;&nbsp;<input type="text" name="search" placeholder="Search your professor">
+                    <button type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+      </div>
+      </div<
+        </center></article>
+    </main>
+
+
+
+
+<div id="login-form-container" style="display: none;">
+  <div id="login-form">
+    <button id="close-btn">&times;</button>
+    <form method="post" action="login.php" >
+      <h2>LOGIN</h2>
+      <label>User Name</label>
+
+      <input type="text" name="uname" placeholder="User Name"><br>
+
+      <label>Password</label>
+
+      <input type="password" name="password" placeholder="Password"><br>
+
+      <button type="submit">Login</button>
+
+    </form>
+  </div>
+</div>
+
+
+<section id="dynamic-section">
+
+
+</section>
+
+<div style="background-color: rgba(255, 255, 255, 0.5); height: 400px; position: relative; color: black; padding: 20px; text-align: center;">
+    <h1>Join the RMP Family</h1>
+    <h3>Love RMP? Let's make it official.</h3>
+    <div style="display: flex; justify-content: center;">
+        <div style="margin: 40px;">
+            <img src="pencil.svg" alt="Pencil">
+            <h3>Manage and edit your ratings</h3>
+        </div>
+        <div style="margin: 40px;">
+            <img src="flower.svg" alt="flower">
+            <h3>Your ratings are <br> always anonymous</h3>
+        </div>
+        <div style="margin: 60px;">
+            <img src="like.svg" alt="like">
+            <h3>Like or dislike ratings</h3>
+        </div>
+    </div>
+</div>
+
+
+<footer>
+  <center>
+    © 2023 Bao Vo USA News, Inc. All Rights Reserved
+    <div>
+      <center>
+      <ul>
+        <li><a href="https://www.linkedin.com/in/gia-bao-vo-365511223/">SITE</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="#">Help</a></li>
+        <li><a href="#">Site Guidelines</a></li>
+      </ul>
+      <center>
+    </div>
+  </center>
+</footer>
+
+
+
+<script>
+//log in
+const loginButton = document.getElementById('login-btn');
+const loginFormContainer = document.getElementById('login-form-container');
+const loginForm = document.getElementById('login-form');
+const closeBtn = document.getElementById('close-btn');
+
+loginButton.addEventListener('click', () => {
+  // Set the display property of the login form container to "flex"
+  // to make it visible and center the login form on the screen
+  loginFormContainer.style.display = 'flex';
+  loginFormContainer.style.alignItems = 'center';
+  loginFormContainer.style.justifyContent = 'center';
+
+  // Add an event listener to the close button to hide the login form
+  closeBtn.addEventListener('click', () => {
+    loginFormContainer.style.display = 'none';
+  });
+
+  // Add an event listener to the login form to prevent it from submitting
+  // and reloading the page
+  /*
+  loginForm.addEventListener('submit', (event) => {
+    event.preventDefault();
+    // TODO: handle login process here
+  });*/
+});
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    const dynamicStylesheet = document.getElementById('dynamic-stylesheet');
+    const selectedStylesheet = localStorage.getItem('selectedStylesheet') || 'style1.css';
+    dynamicStylesheet.href = 'style/' + selectedStylesheet;
+  });
+
+
+
+
+</script>
+
+</body>
+</html>
